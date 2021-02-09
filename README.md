@@ -1,5 +1,5 @@
 ## Dino Ipsum
-#### *Epicodus Week6 Lesson 21 on  2/9/2021*
+#### *Epicodus Week 6 Lesson 21 on  2/9/2021*
 ***By Daniel Adeyemi and Austin Landis***
 ___
 
@@ -14,7 +14,7 @@ ___
 |:---|:---:|:---:|
 |   **Dino(class)** | 
 |  Should create a object with determined parameters |  '2,3'  | 'Dinp has 2 rows and 3 words inside each one' ✅ |   
-|  Should create a object with determined parameters |'!!!'  | '!!!' ✅  |    
+
 
 ***
 ## *Setup instructions:*
