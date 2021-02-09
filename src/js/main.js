@@ -4,8 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '.././css/styles.css';
 import Dino from './business_logic.js';
 
-$('.btn').click(function(event) {
+$('form').submit(function(event) {
   event.preventDefault();
+  $('#par, #words, #output').text("");
   const par = parseInt($('#par').val());
   const words = parseInt($('#words').val());
   let promise = Dino.getDino(par, words);
@@ -15,6 +16,7 @@ $('.btn').click(function(event) {
       $('#output').append(`<p>${body[i]}</p>`);
     }
   }, function(error) {
-    $('#output').text(`There was an error processing your request: ${error}`);
+    $('.showErrors').text(`There was an error processing your request: ${error}`);
   });
+  $('form')[0].reset();
 });
