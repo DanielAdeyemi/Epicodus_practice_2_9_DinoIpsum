@@ -11,7 +11,9 @@ $('.btn').click(function(event) {
   let promise = Dino.getDino(par, words);
   promise.then(function(response) {
     const body = JSON.parse(response);
-    $('#output').text(`${body}`);
+    for (let i = 0; i < par; i++) {
+      $('#output').append(`<p>${body[i]}</p>`);
+    }
   }, function(error) {
     $('#output').text(`There was an error processing your request: ${error}`);
   });
